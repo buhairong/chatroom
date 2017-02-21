@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="loginBox" class="panel panel-primary col-md-8">
+        <div class="panel-heading">WEB1611聊天室</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="nk" class="col-md-2">昵称：</label>
+                <input type="text" id="nk" size="12">
+                <span class="nkError text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2">我是：</label>
+                <input type="radio" name="sex" value="帅哥" checked>帅哥
+                <input type="radio" name="sex" value="美女">美女
+            </div>
+            <div id="selImg" class="form-group">
+                <label class="col-md-2">选择一个头像：</label>
+                <span class="headImg text-danger"></span>
+            </div>
+            <div class="headImgs col-md-11"></div>
+            <p class="col-md-4"><a href="#"><button class="btn btn-success">进入房间</button></a></p>
+        </div>
+    </div>
+</body>
+</html>

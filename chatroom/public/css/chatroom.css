@@ -1,0 +1,56 @@
+.panel{margin:0;}
+
+#userList .panel-body{
+    overflow:auto;
+}
+
+#userList .panel-body div{
+    margin-top:5px;
+    height:30px;
+    line-height:30px;
+}
+
+#userList .panel-body div span{
+   display:inline-block;
+}
+
+#userList .panel-body img{
+    width:25px;
+    height:25px;
+    margin-right:10px;
+}
+
+#messages {
+    border: 1px solid teal;
+    overflow:auto;
+}
+
+#messages div{
+    margin-bottom:3px;
+}
+
+#sendBox{
+    margin-top:10px;
+}
+
+#sendBox .col-md-8{
+    padding-left:0;
+}
+
+#sendBox .col-md-1{
+    padding-right:0;
+}
+
+#sendError{
+    height:20px;
+    line-height:20px;
+}
+
+.num{
+    color:red;
+    font-weight:bold;
+}
+
+.red{
+    color:red;
+}

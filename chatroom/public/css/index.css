@@ -1,0 +1,7 @@
+body{ background-image:url(../images/index_bg.gif);}
+.panel{padding:0;}
+p{text-align: center;}
+label{text-align:right;}
+.headImgs img{width:40px;height:40px;padding:5px;}
+.headImg img{width:40px;height:40px;}
+#selImg{height:40px;}

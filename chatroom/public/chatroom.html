@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/chatroom.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chatroom.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="room" class="panel panel-primary">
+        <div class="panel-heading">
+            欢迎进入WEB1611聊天室 当前在线人数 <span class="num">0</span> 人
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <!--左侧用户列表-->
+                <div id="userList" class="col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">在线用户列表</div>
+                        <div class="panel-body">
+                            <p class="text-warning">双击用户解除私聊</p>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧消息界面-->
+                <div class="col-md-9">
+                    <div class="row">
+                        <div id="messages"class="col-md-11"></div>
+                    </div>
+                    <div class="row">
+                        <div id="sendError"class="text-danger col-md-11"></div>
+                    </div>
+                    <div id="sendBox" class="row">
+                        <div class="col-md-8">
+                            <input type="text" id="msg" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-control">
+                                <option value="全屏">所有人</option>
+                                <option value="私聊">私聊</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn btn-primary">发送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
